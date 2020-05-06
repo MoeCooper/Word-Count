@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>There are {{ count }}  words in your text</h1>
+    <h2>Your Text:</h2>
+    {{ fulltext }}
+
+    <h2>Count of each word</h2>
+    {% for word, count_total in sorted_dictionary %}
+
+    {{ word }}
+    <br>
+    {{ count_total }}
+    <br>
+
+    {% endfor %}
+</body>
+</html>
