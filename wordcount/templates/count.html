@@ -1,21 +1,26 @@
+{% load static from static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Word Count!</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <h1>There are {{ count }}  words in your text</h1>
     <h2>Your Text:</h2>
-    {{ fulltext }}
+    <p class="text">{{ fulltext }}</p>
 
     <h2>Count of each word</h2>
-    {% for word, count_total in sorted_dictionary %}
+    <p class="word_counts">{% for word, count_total in sorted_dictionary %}</p>
 
-    {{ word }}
-    <br>
-    {{ count_total }}
-    <br>
+
+
+    <h2><em>{{ word }}</em> - <i>{{ count_total }}</i></h2>
+    <br />
+
+
 
     {% endfor %}
 </body>

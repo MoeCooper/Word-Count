@@ -1,0 +1,19 @@
+* {
+    font-family: Ubuntu;
+}
+
+body {
+    background-color: lightblue;
+    color: red;
+    text-align: center;
+    margin: 4px;
+}
+
+h1 {
+    border: 1px red solid;
+    margin: 22px;
+}
+
+.text {
+    margin: 2px;
+}
